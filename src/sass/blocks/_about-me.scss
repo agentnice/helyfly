@@ -1,0 +1,113 @@
+.about {
+    display: flex;
+    //margin-top: 27px;
+    
+
+    
+}
+
+.separator {
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+
+.about-wrapper {
+    flex-direction: row;
+    display: flex;
+}
+
+.about-left, .about-right {
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+ 
+.about-left__tittle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+    padding: 37px 0 14px 0;
+    text-align-last: left;
+
+}
+
+.about-left__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #37373F;
+   
+}
+
+.about-left__text--padding {
+    padding-top: 15px;
+}
+
+
+
+
+.about-left__button {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5286EC;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.about-left__button span {
+    margin-left: 8px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+
+    .about-right__tittle {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #37373F;
+        padding: 23px 0 7px;
+    }
+
+    .about-right__button {
+        padding-top: 11px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #5286EC;
+        text-decoration: none; 
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .about-right__img {
+        &::before {
+            content: '';
+            width: 31px;
+            height: 27px;
+            background-image: url("../img/icons/Vectorheart.svg");
+            transform: translate(550%, -50%);
+            position: absolute;
+        }
+    }
+
+
+}
+
+

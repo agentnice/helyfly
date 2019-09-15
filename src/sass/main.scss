@@ -1,0 +1,33 @@
+// Base
+
+@import "./base/variables.scss";
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+
+
+
+// Sections
+@import "./blocks/_header.scss";
+@import "./blocks/_bunner.scss";
+@import "./blocks/_offer.scss";
+@import "./blocks/_about-me.scss";
+@import "./blocks/_timetable.scss";
+@import "./blocks/_location.scss";
+@import "./blocks/_testimonials.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_test.scss";
+@import "./blocks/_gallery.scss";
+
+
+// Blocks
+
+
+
+
+// Media quaries
+@import "./mobile/_mobile.scss";
+
+
+
+// Animation 
+

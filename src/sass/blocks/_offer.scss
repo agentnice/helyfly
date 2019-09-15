@@ -1,0 +1,170 @@
+// Offer section styles
+
+.offer {
+    display: flex;
+    //flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.offer-left__tittle--hidden {
+    display: none;
+    order: -1;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #37373F;
+}
+
+.offer-left {
+    flex-direction: column;
+    width: 40%;
+}
+
+.offer-left__tittle {
+    font-size: 40px;
+    line-height: 49px;
+    color: $bl;
+    font-weight: 700;
+}
+
+.offer-left__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $bl;
+    padding: 18px 0;
+    width: 40vw;
+}
+
+.icons__item {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.item__text {
+    padding-left: 12px;
+}
+
+.icons__item--bottom {
+    border-top: 0.5px solid #C7C7C7;
+    border-bottom: 0.5px solid #C7C7C7;
+    margin-top: 2vw;
+    width: 37vw;
+    height: 5vw;
+}
+
+.item__raiting {
+    padding-left: 12px;
+}
+
+.offer-right {
+    width: 50%;
+    //
+} 
+
+.offer-right__img {
+    padding-left: 8vw;
+    position: relative;
+}
+
+.offer-right__img-item {
+    width: 40vw;
+    height: 28vw;
+}
+
+.icons__item--border {
+    border-top: none;
+}
+
+.gallery {
+    flex-direction: column;
+
+}
+
+.gallery-mobile {
+    display: none;
+}
+
+.gallery-tittle {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 30px 0;
+    font-weight: 700;
+}
+
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: center;
+    //align-items: center;
+}
+
+.gallery__item {
+    width: 23%;
+    padding: 10px;
+}
+
+.gallery__item img{
+    width: 100%;
+    height: 15vw;
+    background-size: cover;
+}
+
+.gallery-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.arrow {
+    width: 11px;
+    height: 6px;
+    background-image: url("../img/icons/Arrow.png");
+}
+
+.gallery-button p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #5286EC;
+    padding: 0 7px;
+}
+
+
+
+.offer-right__button {
+    //content: '';
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/icons/youtube.png');
+    background-size: cover;
+    //transform: translate(1360%, -120%);
+    position: absolute;
+    opacity: 0.7;
+    bottom: 3%;
+    right: -18%;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+#video {
+    display: none;
+}

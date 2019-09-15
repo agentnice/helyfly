@@ -1,0 +1,80 @@
+.location {
+    
+        background-image: url("../img/bg/loc-bg.png");
+        background-size: cover;
+        width: 100%;
+        height: 40%;
+        //height: 38vw;
+        display: flex;
+        background-position-x: 43%;
+        margin-top: 72px;
+    
+}
+
+.location-table {
+    //width: 40vw;
+    //height: 35vw;
+    width: 40%;
+    height: 40%;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    padding: 41px 0 41px 27px;
+    margin: 20px 0;
+}
+
+.location-table__item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 34px;
+}
+
+.location-table__item-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    font-size: 18px;
+}
+
+.item-right__text {
+    padding-top: 12px;
+}
+
+.location-table__item-left-avatar img {
+    width: 67px;
+    height: 67px;
+}
+
+.item-right__text-av {
+    padding: 5px 0;
+}
+
+.item-right__link-av {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5286EC;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.ya-maps {
+    position: relative;
+    z-index: 1000;
+    //margin: 82px 0 0 130px;
+}
+
+/*.ya-maps .container, .ya-maps .maps-wrapper {
+    position: absolute;
+}*/
+.maps-wrapper {
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    //left: 10vw;
+}
+
+.location-table {
+    width: 130%;
+}

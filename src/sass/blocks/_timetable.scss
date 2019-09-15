@@ -1,0 +1,92 @@
+// Timetable styles
+
+.timetable {
+    display: flex;
+    padding-bottom: 82px;
+    .container {
+        border-top: none;
+    }
+}
+
+.timetable-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.timetable-tittle {
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+    font-weight: 700;
+    padding: 50px 0 30px;
+}
+
+.timetable-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    width: 60vw;
+
+}
+
+.timetable-table__tittle {
+    display: flex;
+    flex-direction: row;
+    //justify-content: center;
+    align-items: center;
+}
+
+.timetable-table__tittle p {
+    padding: 30px 0 20px 20px;
+}
+
+.timetable-table__tittle-icon {
+    margin-left: 14px;
+}
+
+.timetable-table__tittle-icon img {
+    padding: 30px 0 20px;
+}
+
+.timetable-table__price {
+    display: flex;
+    flex-direction: row;
+    border-top: 0.5px solid #C7C7C7;
+    //border-bottom: 0.5px solid #C7C7C7;
+}
+
+.price-left {
+    padding: 20px 0 20px 20px;
+    width: 76%;
+
+    .price__cost {
+        padding: 10px 0 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.price-right {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.price-right__button {
+    background: #FFFFFF;
+    border: 2px solid #FC9B09;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: $orange;
+    padding: 16px 32px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.timetable-table .icons__item {
+    padding: 35px 0 35px 48px;
+}

@@ -1,0 +1,292 @@
+// Styles for bunner section
+
+.bunner {
+    background-image: url("../img/bg/helimain.png");
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    background-position-x: right;
+}
+
+.bunner-wrapper {
+    display: flex;
+    flex-direction: column;
+    //padding-left: 16vw;
+
+}
+
+
+.bunner-tittle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 2.8vw;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-top: 13vw;
+    font-weight: 700;
+}
+
+.bunner-tittle--orange {
+    color: $orange;
+}
+
+.bunner-prise {
+    width: 234px;
+    height: 96px;
+    margin: 1vw 0 ;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg/rect.png");
+
+    /*&::before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        top: 82%;
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        position: absolute;
+        background-color: $orange;
+        z-index: -1;
+    }*/
+    
+}
+
+.bunner-prise-left {
+    flex-direction: column;
+}
+
+.bunner-prise__tittle {
+    font-size: 20px;
+    margin-left: 2vw;
+
+}
+
+.bunner-prise__text {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 151.16%;
+    margin-left: 2vw;
+    font-style: bold;
+}
+
+
+.bunner-btn {
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25), 0px 4px 70px rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    padding: 23px 35px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 304px;
+    height: 68px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: 15% auto;
+    flex-direction: column;
+   
+    width: 40%;
+    //height: 140%;
+   //margin: 0 96px;
+   
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 45px;
+    position: absolute;
+    left: 65%;
+    cursor: pointer;
+}
+
+.modal-form__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.modal-form__item-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+#date, #email, #name, #sname, #number, #ccard {
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 30vw;
+    height: 44px;
+    //padding-top: 10px;
+}
+
+#ldate, #cvv {
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 15vw;
+    height: 44px;
+}
+
+.modal-tittle {
+    padding: 64px 0 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.modal-form__item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.modal-form__item label {
+    padding-bottom: 10px;
+}
+
+.modal-form {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"]::placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #C7C7C7;
+} 
+
+input[type="number"]::placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #C7C7C7;
+} 
+
+input[type="email"]::placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #C7C7C7;
+} 
+
+input[type="date"]::placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #C7C7C7;
+} 
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    background-image: url("../img/icons/calendar.png");
+    background-repeat:  no-repeat;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    //border-radius: 50%;
+    margin-top: 6px;
+}
+
+input[type="date"] {
+    font-size: 16px;
+    line-height: 20px;
+    color: #37373F;
+    padding-left: 10px;
+}
+
+.modal-form__item-ckeck {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    padding-top: 23px;
+}
+
+#checkbox{
+    display: none;
+}
+
+#checkbox + label{
+    //display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #FC9B09;
+    box-shadow: 0px 0px 3px rgba(252, 155, 9, 0.6);
+    border-radius: 2px;
+    padding:0 5px;
+}
+
+#checkbox + label:before{
+    content: '✔';
+    font-size: 20px;
+    color:white;
+}
+
+
+#checkbox:checked + label:before{
+    color:black;
+}
+
+.modal-form__item-ckeck p{
+    padding-left: 10px;
+}
+
+.modal-form__item-btn {
+    margin-top: 23px;
+}
+
+.modal-btn {
+    background-color: #FC9B09;
+    border-radius: 3px;
+    /* padding: 27px 128px; */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    width: 29vw;
+    height: 6vw;
+    margin-bottom: 10vw;
+}

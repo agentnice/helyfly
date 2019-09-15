@@ -1,0 +1,31 @@
+section.test
+    .container
+        .slider-wrapper
+            .slider
+                .item
+                    img(src="../img/icons/1.svg", alt="")
+                    .slider__tittle Где встречаемся?
+                    .slider__text Москва
+                .item
+                    img(src="../img/icons/2.svg", alt="")
+                    .slider__tittle Время съемки
+                    .slider__text 3 часа
+                .item
+                    img(src="../img/icons/3.svg", alt="")
+                    .slider__tittle Мест осталось:
+                    .slider__text 2 места
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            .slider-dots
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            .about-right-slider
+                .about-right__left
+                    img(src="../img/avatar.png", alt="ava")
+                .about-right__right
+                    .about-right__tittle Марина Иванова
+                    .about-right__text Фотограф
+                    a(href="").about-right__button 
+                        p Показать больше<br> информации о фотографе
+                

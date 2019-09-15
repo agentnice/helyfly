@@ -1,0 +1,45 @@
+section.bunner
+    .container
+        .bunner-wrapper
+            .bunner-tittle Эксклюзивная <span class="bunner-tittle--orange">фотосессия</span> при полете<br> на вертолете
+            .bunner-prise
+                .bunner-prise-left
+                    .bunner-prise__tittle Стоимость:
+                    .bunner-prise__text <strong>1500₽</strong>
+                .bunner-prise-right
+                    img(src="../img/bg/perc.png", alt="ic")
+            a.bunner-btn Забронировать место
+        .modal#myModal
+            .modal-content
+                span.close &times;
+                .modal-content__top
+                    .modal-tittle Бронирование
+                .modal-form
+                    .modal-form__item
+                        label(for="date") Дата<span class="red">*</span>
+                        input(type="date" id="date" required value="2018-07-22" min="2018-01-01" max="2018-12-31")
+                    .modal-form__item
+                        label(for="email") Email<span class="red">*</span>
+                        input(type="email" id="email" required placeholder="yourmale@example.com")
+                    .modal-form__item
+                        label(for="name") Имя<span class="red">*</span>
+                        input(type="text" id="name" required placeholder="Ваше имя")
+                    .modal-form__item
+                        label(for="sname") Фамилия<span class="red">*</span>
+                        input(type="text" id="sname" required placeholder="Ваша фамилия")
+                    .modal-form__item
+                        label(for="number") Номер<span class="red">*</span>
+                        input(type="text" id="number" required placeholder="+7 (905) 184-81-40" maxlength="число" maxlength="15")
+                    .modal-form__item
+                        label(for="ccard") Данные карты<span class="red">*</span>
+                        input(type="number" id="ccard" placeholder="Номер карты" maxlength="19")
+                        .modal-form__item-inner
+                            input(type="number" id="ldate" placeholder="Срок действия" maxlength="5")
+                            input(type="number" id="cvv"  placeholder="CVV" maxlength="3")
+                    .modal-form__item-ckeck
+                        <input type="checkbox" id="checkbox" required />
+                        <label for="checkbox"></label> 
+                            p Я согласен с пользовательским соглашением и публичной офертой
+                    .modal-form__item-btn
+                        <input class="modal-btn" type="button" value="Забронировать">
+                        
